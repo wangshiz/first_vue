@@ -1,5 +1,17 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <TestComponent msg="this is a testCompobent code"></TestComponent>
   </div>
 </template>
+
+<script>// @ is an alias to /src
+import TestComponent from '@/components/TestComponent.vue'
+
+export default {
+  name: 'about',
+  components: {
+    TestComponent
+  }
+}
+
+</script>
